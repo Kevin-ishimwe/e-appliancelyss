@@ -25,9 +25,12 @@ function Hero() {
             <button className="py-2 px-8 bg-primary text-white rounded-md hover:scale-105 transition-all">
               BOOK A REPAIR
             </button>
-            <button className="py-1.5 px-8 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-105 transition-all">
+            <a
+              href="tel:(978)733-0701"
+              className="py-1.5 px-8 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-105 transition-all"
+            >
               CALL US
-            </button>
+            </a>
           </div>
         </div>
         <div>

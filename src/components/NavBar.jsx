@@ -11,7 +11,7 @@ class link {
 }
 function Navbar() {
   const [style, setstyle] = useState({
-    deg: "90",
+    deg: "90deg",
     counter: false,
     clip: "",
   });
@@ -28,23 +28,26 @@ function Navbar() {
     console.log(style.counter);
     if (style.counter == false) {
       return setstyle({
-        deg: "90",
+        deg: "90deg",
         counter: !style.counter,
         clip: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       });
     }
     return setstyle({
-      deg: "0",
+      deg: "0deg",
       counter: !style.counter,
       clip: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
     });
   };
 
   return (
-    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-2 md:px-[6%]">
-      <div className="flex items-center h-[50%] ">
+    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 md:px-[6%]">
+      <div className="md:flex items-center  md:h-[50%] ">
         <img src={logonav} alt="logo" className=" max-h-[5em]" />
-        <a href="" className="text-2xl text-primary font-semibold ml-2">
+        <a
+          href="tel:(978)733-0701"
+          className="text-xl bg-white sm:text-2xl text-primary font-semibold ml-2"
+        >
           (978)733-0701
         </a>
       </div>
@@ -65,11 +68,11 @@ function Navbar() {
         })}
       </div>
       <div className="">
-        <button className="scale-[0.8] sm:scale-100 px-7 py-3 bg-primary text-white font-semibold rounded-md shadow-md transition-all text-lg hover:scale-[1.02] ">
+        <button className="scale-[0.7] sm:scale-100 px-7 py-3 bg-primary text-white font-semibold rounded-md shadow-md transition-all text-lg hover:scale-[1.02] ">
           Schedule Now
         </button>
         <HiMenu
-          className={`inline text-4xl md:hidden ml-4 text-primary rotate-${style.deg} transition-all`}
+          className={`inline text-4xl md:hidden ml-0 text-primary rotate-[${style.deg}] transition-all`}
           onClick={menuHandler}
         />
       </div>
