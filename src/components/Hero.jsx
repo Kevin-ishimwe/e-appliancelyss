@@ -7,7 +7,7 @@ function Hero() {
     <div className="mx-2 md:mx-[7%] flex flex-wrap md:flex-nowrap">
       <div className="md:w-[50%]">
         <div>
-          <h1 className="text-[3.5em] font-extrabold text-secondary font-['Oswald'] ">
+          <h1 className="text-4xl md:text-[3.5em] font-extrabold text-secondary font-['Oswald'] ">
             Bringing Your Appliances <br />
             Back to Life
           </h1>
