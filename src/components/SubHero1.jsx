@@ -25,7 +25,7 @@ function SubHero1() {
             return (
               <img
                 src={img}
-                className="w-[25%] h-24 object-contain"
+                className="w-[25%] h-24 object-contain hover:scale-110 transition-all"
                 key={img}
               ></img>
             );
