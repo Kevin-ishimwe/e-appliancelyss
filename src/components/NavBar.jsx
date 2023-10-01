@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { NavLink, useLocation } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import logonav from "../assets/logo.png";
 
@@ -15,10 +15,11 @@ function Navbar() {
     counter: false,
     clip: "",
   });
+  const location = useLocation();
   const links = [
     new link("/", "Home"),
     new link("/services", "Services"),
-    new link("/raq", "Request a qoute"),
+    new link("/raq", "Request a quote"),
     new link("/contact", "Contact us"),
   ];
   //   const handleButtonClick = () => {
@@ -57,13 +58,15 @@ function Navbar() {
       >
         {links.map(({ name, path }) => {
           return (
-            <a
+            <NavLink
               key={name}
               to={path}
-              className="hover:bg-[#d484c54b] md:hover:bg-inherit hover:text-primary py-5 px-5 md:px-2 lg:px-4 text-lg text-darkBlue "
+              className={`hover:bg-[#d484c54b] md:hover:bg-inherit hover:text-primary py-5 px-5 md:px-2 lg:px-4 text-lg text-darkBlue ${
+                location.pathname == path ? "font-bold" : "font-normal"
+              } `}
             >
               {name}
-            </a>
+            </NavLink>
           );
         })}
       </div>

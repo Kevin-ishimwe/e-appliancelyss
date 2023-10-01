@@ -27,17 +27,7 @@ const content = [
     date: "September 23, 2023",
   },
   {
-    equipment: "fridge",
-    rating: 4,
-    img: "https://cdn.pixabay.com/photo/2014/03/27/13/36/man-299488_960_720.jpg",
-    body: `He was very pleasant, Knowledgeable and courteous. I would most
-          definitely recommend him
-   `,
-    name: "Joan L, Maple Shade, NJ",
-    date: "September 23, 2023",
-  },
-  {
-    equipment: "fridge",
+    equipment: "cooker",
     rating: 5,
     img: "https://cdn.pixabay.com/photo/2014/03/27/13/36/man-299488_960_720.jpg",
     body: `He was very pleasant, Knowledgeable and courteous. I would most
@@ -59,6 +49,26 @@ const content = [
   {
     equipment: "fridge",
     rating: 5,
+    img: "https://cdn.pixabay.com/photo/2014/03/27/13/36/man-299488_960_720.jpg",
+    body: `He was very pleasant, Knowledgeable and courteous. I would most
+          definitely recommend him
+   `,
+    name: "Joan L, Maple Shade, NJ",
+    date: "September 23, 2023",
+  },
+  {
+    equipment: "fridge",
+    rating: 5,
+    img: "https://cdn.pixabay.com/photo/2014/03/27/13/36/man-299488_960_720.jpg",
+    body: `He was very pleasant, Knowledgeable and courteous. I would most
+          definitely recommend him
+   `,
+    name: "Joan L, Maple Shade, NJ",
+    date: "September 23, 2023",
+  },
+  {
+    equipment: "fridge",
+    rating: 4.5,
     img: "https://cdn.pixabay.com/photo/2014/03/27/13/36/man-299488_960_720.jpg",
     body: `He was very pleasant, Knowledgeable and courteous. I would most
           definitely recommend him
@@ -70,7 +80,7 @@ const content = [
 
 export const TestimonialsBody = () => {
   return (
-    <div className="flex overflow-x-scroll py-3 px-5">
+    <div className="flex overflow-x-scroll py-3 -px-5 md:px-5">
       {content.map(({ name, body, img, equipment, date, rating }) => {
         return (
           <TesiCard
