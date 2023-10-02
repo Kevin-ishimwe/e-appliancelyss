@@ -19,8 +19,7 @@ function Navbar() {
   const links = [
     new link("/", "Home"),
     new link("/services", "Services"),
-    new link("/raq", "Request a quote"),
-    new link("/contact", "Contact us"),
+    new link("/request-quote", "Request a quote"),
   ];
   //   const handleButtonClick = () => {
   //     console.log("Button clicked!");
@@ -42,7 +41,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 md:px-[6%]">
+    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 md:px-[6%] top-0">
       <div className="md:flex items-center  md:h-[50%] ">
         <img src={logonav} alt="logo" className=" max-h-[5em]" />
         <a
@@ -71,9 +70,12 @@ function Navbar() {
         })}
       </div>
       <div className="">
-        <button className="scale-[0.7] sm:scale-100 px-7 py-3 bg-primary text-white font-semibold rounded-md shadow-md transition-all text-lg hover:scale-[1.02] ">
+        <NavLink
+          to={"/request-quote"}
+          className="scale-[0.7] sm:scale-100 px-7 py-3 bg-primary text-white font-semibold rounded-md shadow-md transition-all text-lg hover:scale-[1.02] "
+        >
           Schedule Now
-        </button>
+        </NavLink>
         <HiMenu
           className={`inline text-4xl md:hidden ml-0 text-primary rotate-[${style.deg}] transition-all`}
           onClick={menuHandler}

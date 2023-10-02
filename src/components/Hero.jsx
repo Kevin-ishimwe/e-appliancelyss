@@ -3,6 +3,7 @@ import warranty from "../assets/waranty.png";
 import hero2 from "../assets/hero2.png";
 import SubHero1 from "./SubHero1";
 import { TestimonialsHead, TestimonialsBody } from "./Testimonials";
+import { NavLink } from "react-router-dom";
 function Hero() {
   return (
     <div className="mx-2 md:mx-[7%] ">
@@ -24,9 +25,12 @@ function Hero() {
               Schedule appliance repair services
             </a>
             <div className="mt-5">
-              <button className="py-2 px-8 bg-primary text-white rounded-md hover:scale-105 transition-all">
+              <NavLink
+                to={"request-quote"}
+                className="py-2 px-8 bg-primary text-white rounded-md hover:scale-105 transition-all"
+              >
                 BOOK A REPAIR
-              </button>
+              </NavLink>
               <a
                 href="tel:(978)733-0701"
                 className="py-1.5 px-8 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-105 transition-all"
@@ -58,7 +62,9 @@ function Hero() {
             </div>
           </div>
           <div>
-            <SubHero1 />
+            <SubHero1
+              header={"Same-Day Service: Your Appliance, Fixed Today!"}
+            />
           </div>
         </div>
       </div>
