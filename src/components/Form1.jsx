@@ -5,7 +5,7 @@ function Form1() {
   const [track, settrack] = useState(0);
   const [location, setlocation] = useState("");
   const getLocation = async () => {
-    try {
+   
       const ip_address = await fetch("https://api.ipify.org/?format=json")
         .then((res) => res.json())
         .then((data) => {
@@ -33,18 +33,20 @@ function Form1() {
           address.pop();
           setlocation(address.join(","));
         });
-    } catch (error) {
-      settrack((prev) => prev++);
-    }
+ 
   };
   useEffect(() => {
-    getLocation();
-    console.log("location", location);
+    try{
+      getLocation();
+      console.log("location", location);
+       } catch (error) {
+      settrack((prev) => prev++);
+    }
   }, [track]);
 
   return (
-    <div className="mx-4  my-[9em] md:w-[70%] md:mx-auto md:flex bg-[#003980] rounded-xl shadow-[1px_0px_40px_#00000032]">
-      <div className="px-5 md:w-[50%] flex justify-center flex-col">
+    <div className="mx-4 my-[9em] md:w-[70%] md:mx-auto md:flex bg-[#003980] rounded-xl shadow-[1px_0px_40px_#00000032]">
+      <div className="px-5 md:w-[50%] flex justify-center flex-col pt-5">
         <h1 className="text-2xl md:text-3xl text-white font-bold">
           E-appliance repair at your service
         </h1>
@@ -57,7 +59,7 @@ function Form1() {
           className=" rounded-md object-contain w-full md:grid"
         ></img>
       </div>
-      <form className=" py-4 bg-white md:w-[50%] flex justify-center  flex-col px-3 rounded-l-none rounded-md">
+      <form className=" py-4 bg-white md:w-[50%] flex justify-center  flex-col px-3 md:rounded-l-none rounded-md">
         <input
           className=" focus:invalid:border-red-300  focus:valid:border-green-300 focus:outline-none  w-full py-1.5 border-[1px] border-primaryDark bg-inherit my-1 px-3 rounded-md"
           type="text"

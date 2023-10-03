@@ -41,7 +41,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 md:px-[6%] top-0">
+    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 lg:px-[6%] top-0">
       <div className="md:flex items-center  md:h-[50%] ">
         <img src={logonav} alt="logo" className=" max-h-[5em]" />
         <a
