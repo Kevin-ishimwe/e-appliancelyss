@@ -5,48 +5,51 @@ function Form1() {
   const [track, settrack] = useState(0);
   const [location, setlocation] = useState("");
   const getLocation = async () => {
-   
-      const ip_address = await fetch("https://api.ipify.org/?format=json")
-        .then((res) => res.json())
-        .then((data) => {
-          return data.ip;
-        });
+    const ip_address = await fetch("https://api.ipify.org/?format=json")
+      .then((res) => res.json())
+      .then((data) => {
+        return data.ip;
+      });
 
-      const location = await fetch(
-        `https://geolocation-db.com/json/${ip_address}`
-      )
-        .then((res) => (res.status == 200 ? res.json() : "failed"))
-        .then((data) => {
-          if (data != "failed") {
-            return data;
-          } else {
-            console.log("failed");
-            settrack((prev) => prev++);
-          }
-        });
-      await fetch(
-        `https://geocode.maps.co/reverse?lat=${location.latitude}&lon=${location.longitude}`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          const address = data.display_name.split(",");
-          address.pop();
-          setlocation(address.join(","));
-        });
- 
+    const location = await fetch(
+      `https://geolocation-db.com/json/${ip_address}`
+    )
+      .then((res) => (res.status == 200 ? res.json() : "failed"))
+      .then((data) => {
+        if (data != "failed") {
+          return data;
+        } else {
+          console.log("failed");
+          settrack((prev) => prev++);
+        }
+      });
+    await fetch(
+      `https://geocode.maps.co/reverse?lat=${location.latitude}&lon=${location.longitude}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        const address = data.display_name.split(",");
+        address.pop();
+        setlocation(address.join(","));
+      });
   };
   useEffect(() => {
-    try{
+    try {
       getLocation();
       console.log("location", location);
-       } catch (error) {
+    } catch (error) {
       settrack((prev) => prev++);
     }
   }, [track]);
 
   return (
-    <div className="mx-4 my-[9em] md:w-[70%] md:mx-auto md:flex bg-[#003980] rounded-xl shadow-[1px_0px_40px_#00000032]">
-      <div className="px-5 md:w-[50%] flex justify-center flex-col pt-5">
+    <div className="mt-[9em]">
+      <iframe
+        src="https://book.housecallpro.com/book/Lyss-Appliance-Repair/db46d0ead1a04648967912dde3cfa8e0"
+        className="w-full overflow-hidden h-[100vh]"
+      ></iframe>
+
+      {/* <div className="px-5 md:w-[50%] flex justify-center flex-col pt-5">
         <h1 className="text-2xl md:text-3xl text-white font-bold">
           E-appliance repair at your service
         </h1>
@@ -117,7 +120,7 @@ function Form1() {
         >
           BOOK A REPAIR
         </button>
-      </form>
+      </form> */}
     </div>
   );
 }
