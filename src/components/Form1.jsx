@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import serviceImg from "../assets/service.png";
+// import serviceImg from "../assets/service.png";
 
 function Form1() {
   const [track, settrack] = useState(0);

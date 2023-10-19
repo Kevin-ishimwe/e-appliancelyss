@@ -7,7 +7,6 @@ import Quote from "./pages/Quote";
 import PaymentPage from "./pages/PaymentPage";
 
 function App() {
-  console.log(window);
   return (
     <>
       <Router>
@@ -20,7 +19,6 @@ function App() {
                   <Route path="/" element={<Homepage />} />
                   <Route path="/services" element={<Services />} />
                   <Route path="/request-quote" element={<Quote />} />
-                  <Route path="/payment" element={<PaymentPage />} />
                 </Routes>
 
                 <Footer />
