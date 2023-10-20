@@ -24,7 +24,7 @@ function Hero() {
   ];
 
   return (
-    <div className="mx-2 md:mx-[7%] ">
+    <div className="mx-2 lg:mx-[7%] ">
       <div className=" flex flex-wrap md:flex-nowrap">
         <div className="md:w-[50%]">
           <div>
@@ -45,13 +45,13 @@ function Hero() {
             <div className="mt-5">
               <NavLink
                 to={"request-quote"}
-                className="py-2.5 border-2 border-primary px-8 bg-primary text-white rounded-md hover:scale-105 transition-all md:text-xl hover:bg-primaryDark  "
+                className="py-2.5 border-2 border-primary px-8 bg-primary text-white rounded-md hover:scale-105 transition-all lg:text-xl hover:bg-primaryDark  "
               >
                 BOOK A REPAIR
               </NavLink>
               <a
                 href="tel:(978)733-0701"
-                className="md:text-xl py-2.5 px-12 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-150 transition-all hover:bg-primary hover:text-white"
+                className="lg:text-xl py-2.5 px-12 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-150 transition-all hover:bg-primary hover:text-white"
               >
                 CALL US
               </a>
@@ -62,7 +62,7 @@ function Hero() {
               <img
                 src={hero2}
                 alt=""
-                className="mt-10 h-[25em] w-[100%] md:w-[80%] rounded-2xl shadow-sm rounded-r-none"
+                className="mt-10 h-[25em] w-[90%] mx-auto md:w-[80%] rounded-2xl shadow-sm md:rounded-r-none"
               />
               <img
                 src={SubHero2}
