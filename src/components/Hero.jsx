@@ -45,13 +45,13 @@ function Hero() {
             <div className="mt-5">
               <NavLink
                 to={"request-quote"}
-                className="py-2.5 border-2 border-primary px-8 bg-primary text-white rounded-md hover:scale-105 transition-all text-xl hover:bg-primaryDark "
+                className="py-2.5 border-2 border-primary px-8 bg-primary text-white rounded-md hover:scale-105 transition-all md:text-xl hover:bg-primaryDark  "
               >
                 BOOK A REPAIR
               </NavLink>
               <a
                 href="tel:(978)733-0701"
-                className="text-xl py-2.5 px-12 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-150 transition-all hover:bg-primary hover:text-white"
+                className="md:text-xl py-2.5 px-12 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-150 transition-all hover:bg-primary hover:text-white"
               >
                 CALL US
               </a>
@@ -62,12 +62,12 @@ function Hero() {
               <img
                 src={hero2}
                 alt=""
-                className="mt-10 h-[25em] w-[80%] rounded-2xl shadow-sm rounded-r-none"
+                className="mt-10 h-[25em] w-[100%] md:w-[80%] rounded-2xl shadow-sm rounded-r-none"
               />
               <img
                 src={SubHero2}
                 alt=""
-                className="mt-10 mr-4 h-[25em] w-[80%] rounded-xl shadow-sm rounded-l-none"
+                className=" hidden md:grid mt-10 mr-4 h-[25em] w-[80%] rounded-xl shadow-sm rounded-l-none"
               />
             </div>
             <div className="hidden lg:grid">
@@ -89,7 +89,7 @@ function Hero() {
               {features2.map((feature) => {
                 return (
                   <img
-                  src={feature}
+                    src={feature}
                     className="mt-3 font-semibold text-primaryDark"
                     key={feature}
                   />
