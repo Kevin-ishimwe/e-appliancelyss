@@ -121,10 +121,10 @@ function PaymentPage() {
   };
 
   return (
-    <div className="flex justify-between bg-indigo-100">
+    <div className="flex justify-between bg-indigo-100 min-h-screen">
       <NavLink
         to={"/"}
-        className="fixed text-md text-primaryDark mt-5 ml-2 flex font-semibold"
+        className="absolute text-md text-primaryDark mt-5 ml-2 flex font-semibold"
       >
         <BsFillArrowLeftCircleFill className="text-2xl mr-2" />
         home/client payment
@@ -181,7 +181,7 @@ function PaymentPage() {
               }}
               placeholder="appliance/photos"
             />
-            <div className="flex">
+            <div className="flex flex-wrap md:flex-nowrap">
               {previewImg.map((src) => {
                 return (
                   <img key={src} className="h-[10em] ml-2" src={src} alt="" />
