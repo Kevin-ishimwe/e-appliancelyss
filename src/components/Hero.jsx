@@ -26,9 +26,9 @@ function Hero() {
   return (
     <div className="mx-2 lg:mx-[7%] ">
       <div className=" flex flex-wrap md:flex-nowrap">
-        <div className="md:w-[50%]">
-          <div>
-            <h1 className="text-4xl md:text-[3.5em] font-extrabold text-secondary font-['Oswald'] md:leading-[1.2em] ">
+        <div className="md:w-[50%] ">
+          <div className="md:min-h-[50vh] flex flex-col mt-5 justify-evenly">
+            <h1 className="text-4xl md:text-[3.6em] font-extrabold text-secondary font-['Oswald'] md:leading-[1.2em] ">
               Bringing Your Appliances <br />
               Back to Life
             </h1>
@@ -45,7 +45,7 @@ function Hero() {
             <div className="mt-5">
               <NavLink
                 to={"request-quote"}
-                className="py-2.5 border-2 border-primary px-8 bg-primary text-white rounded-md hover:scale-105 transition-all lg:text-xl hover:bg-primaryDark  "
+                className="py-2.5 border-2 border-primary px-6 bg-primary text-white rounded-md hover:scale-105 transition-all lg:text-xl hover:bg-primaryDark  "
               >
                 BOOK A REPAIR
               </NavLink>
@@ -67,7 +67,7 @@ function Hero() {
               <img
                 src={SubHero2}
                 alt=""
-                className=" hidden md:grid mt-10 mr-4 h-[25em] w-[80%] rounded-xl shadow-sm rounded-l-none"
+                className=" hidden lg:grid mt-10 mr-4 h-[25em] w-[80%] rounded-xl shadow-sm rounded-l-none"
               />
             </div>
             <div className="hidden lg:grid">
