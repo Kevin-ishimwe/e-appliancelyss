@@ -84,8 +84,14 @@ function Footer() {
             <h1 className="text-xl font-semibold text-primaryDark">
               Stay Connected
             </h1>
+            <p className="text-primaryDark grid">
+              get in touch with us at{" "}
+              <span className="font-semibold italic">
+                lyssappliancerepair@gmail.com
+              </span>
+            </p>
             <div className="grid md:w-[25em]">
-              <div className="flex my-4">
+              <div className="flex my-2">
                 <input
                   className="bg-inherit border-[1px] px-3 py-1 rounded-md border-gray-700 active:outline-green-500"
                   type="text"
