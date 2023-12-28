@@ -41,14 +41,14 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed bg-white z-20  flex w-full   h-[7em] items-center justify-between px-0.5 lg:px-[6%] top-0">
+    <div className="fixed bg-white z-20  flex w-full   h-[6.5em] items-center justify-between px-0.5 lg:px-[6%] top-0 border-primary border-b-[3px]">
       <div className="md:flex items-center  md:h-[50%] ">
-        <img src={logonav} alt="logo" className=" max-h-[5em]" />
+        <img src={logonav} alt="logo" className=" max-h-[4em] " />
         <a
           href="tel:(978)733-0701"
           className="text-xl bg-white sm:text-2xl text-primary font-semibold ml-2"
         >
-          (978)733-0701
+          (978)549-5388
         </a>
       </div>
       <div
@@ -60,8 +60,10 @@ function Navbar() {
             <NavLink
               key={name}
               to={path}
-              className={`hover:bg-[#d484c54b] md:hover:bg-inherit hover:text-primary py-5 px-5 md:px-2 lg:px-4 text-lg text-darkBlue ${
-                location.pathname == path ? "font-bold" : "font-normal"
+              className={`hover:bg-[#d484c54b] md:hover:bg-inherit hover:text-primary py-5 px-5 md:px-2 lg:px-4 text-lg  ${
+                location.pathname == path
+                  ? "font-bold text-primary"
+                  : "font-normal text-[#191f3e]"
               } `}
             >
               {name}

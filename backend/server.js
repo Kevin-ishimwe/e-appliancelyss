@@ -16,10 +16,6 @@ app.use(
     credentials: true,
   })
 );
-app.get("/download", (req, res) => {
-  console.log("working......");
-  res.json({ success: "success" });
-});
 
 const port = process.env.PORT || 5172;
 mongoose.set("strictQuery", true);
