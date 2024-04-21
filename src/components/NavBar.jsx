@@ -48,7 +48,7 @@ function Navbar() {
           href="tel:(978)733-0701"
           className="text-xl bg-white sm:text-2xl text-primary font-semibold ml-2"
         >
-          (978)549-5388
+          (443)891-5665
         </a>
       </div>
       <div
