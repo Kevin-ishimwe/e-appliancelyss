@@ -50,7 +50,7 @@ function Hero() {
                 BOOK A REPAIR
               </NavLink>
               <a
-                href="tel:(978)733-0701"
+                href="tel:(443)891-5665"
                 className="lg:text-xl py-2.5 px-12 ml-2 bg-none text-primary rounded-md border-primary border-2 hover:scale-150 transition-all hover:bg-primary hover:text-white"
               >
                 CALL US
