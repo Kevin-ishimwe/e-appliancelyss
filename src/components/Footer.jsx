@@ -46,7 +46,7 @@ function Footer() {
         <div className=" mt-5 flex flex-wrap md:flex-nowrap justify-between">
           <div className="">
             <h1 className="text-xl font-semibold text-primaryDark">
-              E-appliance services
+              VEX APPLIANCE
             </h1>
             <div className="grid">
               {links.map(({ name, path }) => {
@@ -86,9 +86,12 @@ function Footer() {
             </h1>
             <p className="text-primaryDark grid">
               get in touch with us at{" "}
-              <span className="font-semibold italic">
-                lyssappliancerepair@gmail.com
-              </span>
+              <a
+                href="mailto:vexappliance@gmail.com"
+                className="font-semibold italic"
+              >
+                vexappliance@gmail.com
+              </a>
             </p>
             <div className="grid md:w-[25em]">
               <div className="flex my-2">
@@ -114,7 +117,7 @@ function Footer() {
         <div className="md:flex justify-between">
           <div>
             <h1 className="text-xl font-semibold text-primaryDark">
-              E-appliance Services Available In These Cities
+              VEX APPLIANCE Available In These Cities
             </h1>
             <div className="flex flex-col md:grid grid-cols-2">
               {links3.map(({ name, path }) => {
@@ -132,7 +135,7 @@ function Footer() {
           </div>
           <div className="md:w-[25em] my-1">
             <h1 className="text-xl font-semibold text-primaryDark">
-              E-appliance Services payment made easy
+              VEX APPLIANCE payment made easy
             </h1>
             <img
               src="https://www.bambooblisssheets.com/product_images/uploaded_images/all-credit-cards-paypal-applepay-amazonpay-accepted.png"
@@ -153,7 +156,7 @@ function Footer() {
           ))}
         </div>
         <p className="text-gray-600">
-          &copy;2023 E-appliance Services LLC. All Rights Reserved.
+          &copy;2023 VEX APPLIANCE LLC. All Rights Reserved.
         </p>
       </div>
     </>

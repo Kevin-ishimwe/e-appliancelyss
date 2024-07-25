@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <div className="fixed bg-white z-20  flex w-full   h-[6.5em] items-center justify-between px-0.5 lg:px-[6%] top-0 border-[#dde1e4] border-b-[2px]">
       <div className="md:flex items-center  md:h-[50%] ">
-        <img src={logonav} alt="logo" className=" max-h-[4em] " />
+        <img src={logonav} alt="logo" className=" max-h-[5em] object-cover" />
         <a
           href="tel:(978)733-0701"
           className="text-xl bg-white sm:text-2xl text-primary font-semibold ml-2"

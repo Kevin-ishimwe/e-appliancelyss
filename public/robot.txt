@@ -1,0 +1,50 @@
+# VEX APPLIANCE - Maryland Appliance Repair Services
+# Phone: (443) 891-5665
+# We provide expert appliance repair in Maryland
+
+User-agent: *
+Allow: /
+
+# Priority pages for SEO
+Allow: /services/
+Allow: /request-quote/
+Allow: /schedule-repair/
+Allow: /contact-us/
+
+# Maryland Service Areas
+Allow: /maryland/
+Allow: /maryland/annapolis/
+Allow: /maryland/baltimore/
+Allow: /maryland/columbia/
+Allow: /maryland/silver-spring/
+Allow: /maryland/towson/
+Allow: /maryland/rockville/
+Allow: /maryland/frederick/
+Allow: /maryland/gaithersburg/
+Allow: /maryland/ellicott-city/
+Allow: /maryland/bowie/
+Allow: /maryland/bethesda/
+Allow: /maryland/dundalk/
+Allow: /maryland/germantown/
+Allow: /maryland/glen-burnie/
+Allow: /maryland/waldorf/
+
+# Appliance Types We Service
+Allow: /appliances/refrigerator/
+Allow: /appliances/fridge/
+Allow: /appliances/freezer/
+Allow: /appliances/washer/
+Allow: /appliances/dryer/
+Allow: /appliances/dishwasher/
+Allow: /appliances/oven/
+Allow: /appliances/stove/
+Allow: /appliances/microwave/
+Allow: /appliances/garbage-disposal/
+Allow: /appliances/ice-maker/
+
+# Blog and informational content
+Allow: /tips/
+Allow: /faq/
+
+# Sitemap
+Sitemap: https://www.vexappliance.com/sitemap.xml
