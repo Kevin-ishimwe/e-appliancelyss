@@ -20,6 +20,7 @@ function App() {
                   <Route path="/services" element={<Services />} />
                   <Route path="/request-quote" element={<Quote />} />
                   <Route path="/schedule-repair" element={<Quote />} />
+                  <Route path="/*" element={<Homepage />} />
                 </Routes>
 
                 <Footer />
